@@ -1,0 +1,12 @@
+type Mutation {
+  # Generate a JWT for an existing user
+  login(email: String!, password: String!): AuthnOutput!
+
+  # Create a new user and generate a JWT
+  register(email: String!, password: String!): AuthnOutput!
+}
+
+type AuthnOutput {
+  # The JWT to be included in the response header's Authorization
+  token: String!
+}

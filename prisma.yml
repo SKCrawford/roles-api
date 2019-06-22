@@ -1,0 +1,23 @@
+---
+## Endpoint of Prisma API
+endpoint: http://localhost:4466
+
+## File(s) containing the definition of the data model(s)
+datamodel:
+  - src/modules/core/names.model.prisma
+  - src/modules/user-auth/users/users.model.prisma
+
+## Run seeds after $ yarn prisma deploy or $ yarn prisma seed
+seed:
+  import: src/modules/core/prisma/prisma.seed.graphql
+
+## Generate Typescript bindings via prisma-binding
+hooks:
+  post-deploy:
+    - yarn graphql get-schema --project database
+    - yarn graphql codegen --project database
+#
+## If specified, secret must be used to generate a JWT in the
+## Authorization header of the request
+## Info: https://www.prisma.io/docs/reference/prisma-api/concepts-utee3eiquo#authentication
+# secret: supersecretgraphqlkey

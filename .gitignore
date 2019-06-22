@@ -1,0 +1,23 @@
+# ENV
+.env*
+!.env-template
+
+# IDE
+*.swp
+
+# Development
+nohup.out
+coverage/
+
+# Generated files
+prisma.generated/
+bundled.gql-bindings.ts
+
+# Dependencies
+/node_modules
+
+# Distribution
+/dist
+
+# Logs
+*.log

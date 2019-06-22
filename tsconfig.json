@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "module": "commonjs",
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "outDir": "./dist",
+    "paths": {
+      "@lib/core": ["src/modules/core"],
+      "@lib/prisma": ["src/modules/core/prisma"],
+      "@lib/gql-bindings": ["src/modules/bundled.gql-bindings"],
+      "@lib/user-auth": ["src/modules/user-auth"],
+      "@lib/utils": ["src/utils"]
+    },
+    "removeComments": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "target": "es6"
+  },
+  "exclude": ["node_modules", "src/**/*.old/*"]
+}

@@ -1,0 +1,14 @@
+type Name {
+  id: ID! @id
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+
+  # The first name/initial of the person
+  first: String
+
+  # The middle name/initial of the person
+  middle: String
+
+  # The last name/initial of the person
+  last: String
+}

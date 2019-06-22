@@ -1,0 +1,11 @@
+### Post-installation
+- Update package.json
+    - Update node_modules
+- Update docker-compose.yml
+    - Update user and password
+    - Enable management API secret key
+- Update prisma.yml
+    - Match container version to package.json's prisma dependency
+        - 'latest' may work but has caused issues in the past
+    - Enable JWT secret key
+- Run $ yarn make

@@ -1,0 +1,14 @@
+type User {
+  id: ID! @id
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+
+  # The email address of the user
+  email: String! @unique
+
+  # The name of the user
+  name: Name! @relation(name: "UserName" onDelete: CASCADE)
+
+  # The hashed pasword of the user
+  password: String!
+}

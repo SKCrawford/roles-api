@@ -1,0 +1,17 @@
+mutation {
+  testuser: createUser(
+    data: {
+      email: "test@test.com"
+      password: "$2b$08$V0P6OrRmIKQv7TD8dURobueLHHWs9MH3YQq5M.n/zjFLxwLNr4UjK"
+      name: {
+        create: { 
+          first: "TestFirst"
+          middle: "TestMiddle"
+          last: "TestLast" 
+        }
+      }
+    }
+  ) {
+    id
+  }
+}
