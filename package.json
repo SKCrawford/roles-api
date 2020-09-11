@@ -39,7 +39,7 @@
     "graphql": "^14.2.0",
     "graphql-tools": "^4.0.4",
     "helmet": "^3.16.0",
-    "node-fetch": "^2.3.0",
+    "node-fetch": "^2.6.1",
     "pg": "^7.9.0",
     "reflect-metadata": "^0.1.12",
     "rimraf": "^2.6.2",
